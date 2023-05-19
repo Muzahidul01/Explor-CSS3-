@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Cricket Use HTML And CSS</title>
+</head>
+<style>
+    .field {
+        width: 2000px;
+        height: 500px;
+        /* border: 2px solid red; */
+
+    }
+
+    img {
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    .field:hover .bat {
+        transform: rotate(-50deg);
+
+
+    }
+
+    .bat {
+        transition: 0.5s;
+        transform-origin: top right;
+    }
+
+    .field:hover .ball {
+        transform: translate(885px, -100px);
+
+
+    }
+
+    .ball {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(189, 5, 5);
+        border-radius: 55%;
+        position: relative;
+        left: 418px;
+        bottom: 20px;
+
+        transition: 0.6s ease-out 0.2s;
+
+
+    }
+</style>
+
+<body>
+    <div class="field">
+        <img class="bat" src="1.png" alt="">
+
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
